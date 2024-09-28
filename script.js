@@ -1,0 +1,1 @@
+console.log('I am attaching code of the page on every page')

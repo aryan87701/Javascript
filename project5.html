@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+   margin: 0px;
+   padding: 0px;
+    background: url('https://wallpapers.com/downloads/high/dark-anime-scenery-wot9wg412s7h8yxa.webp');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 1054px;
+  
+}
+h1{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    font-size: 60px;
+}
+
+
+
+.event-details {
+    background-color: #f7f7f791;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.event-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-details li {
+    margin-bottom: 10px;
+}
+
+.event-details strong {
+    font-weight: bold;
+}
+
+.rsvp-form {
+    background-color: #f7f7f791;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.rsvp-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.rsvp-form input[type="text"], .rsvp-form input[type="email"], .rsvp-form input[type="number"] {
+    
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    width: 800px;
+}
+
+.rsvp-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.rsvp-form input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+#rsvp-response {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #00698f;
+}
+nav ul {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.408);
+    border-radius: 25PX;
+    padding: 15PX 15PX;
+  
+    
+}
+nav ul li a{
+    margin: 12px 20px;
+    font-family: "Space Grotesk", sans-serif;  
+font-size: large;     
+text-decoration: none;  }  
+nav ul li a:hover{
+    color: rgb(208 251 77 / 86%);
+    text-decoration: underline;
+cursor: pointer;
+} 
+header{
+    display:flex;
+    justify-content: center;
+  
+   
+   
+}
+a{
+    color: white;
+}
+a.active{
+    color:rgb(208 251 77 / 86%);
+    text-decoration: underline;
+
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+    line-height: 3px;
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="Biodata.html">ABOUT</a></li>
+                
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="project4.html" >PROJECT-4</a></li>
+                <li><a href="project5.html" class="active">PROJECT-5</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+        <h1>INTERACTIVE EVENT</h1>
+    
+    <main>
+        <section class="event-details">
+            <h2>EVENT DETAILS</h2>
+            <ul>
+                <li><strong>Date:</strong> <span id="event-date">June 18, 2024</span></li>
+                <li><strong>Time:</strong> <span id="event-time">2:00 PM - 5:00 PM</span></li>
+                <li><strong>Location:</strong> <span id="event-location">Vinco, Gandhi Nagar, Bhopal</span></li>
+            </ul>
+        </section>
+        <section class="rsvp-form">
+            <h2>RSVP</h2>
+            <form id="rsvp-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <div id="rsvp-response"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+          <p>17/09/2024 | ARYAN'S FIRST WEBSITE</p> 
+          <p>Email : <a href="mailto:singharyan792005@gmail.com">singharyan792005@gmail.com</p></a><p>Tel no. :<a href="tel:+918815389485"> 8815389485</a></p>
+        </div>
+      </footer>
+    
+</body>
+</html>
